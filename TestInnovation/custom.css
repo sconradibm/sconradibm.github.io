@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'ibm-plex-sans';
+  src: url('IBMPlexSans-Regular-Latin1.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'ibm-plex-sans';
+  src: url('IBMPlexSans-Light-Latin1.woff2') format('woff2');
+  font-weight:100; 
+}
+@font-face {
+  font-family: 'ibm-plex-sans';
+  src: url('IBMPlexSans-LightItalic-Latin1.woff2') format('woff2');
+  font-weight:100; 
+  font-style:italic;
+}
+@font-face {
+  font-family: 'ibm-plex-sans';
+  src: url('IBMPlexSans-LightItalic-Latin1.woff2') format('woff2');
+  font-weight:100; 
+  font-style:italic;
+}
+@font-face {
+  font-family: 'ibm-plex-sans';
+  src: url('IBMPlexSans-SemiBoldItalic-Latin1.woff2') format('woff2');
+  font-weight:bold; 
+  font-style:italic;
+}
+@font-face {
+  font-family: 'ibm-plex-sans';
+  src: url('IBMPlexSans-SemiBold-Latin1.woff2') format('woff2');
+  font-weight:bold;
+}
+

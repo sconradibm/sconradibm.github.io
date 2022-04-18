@@ -1,0 +1,554 @@
+@font-face {
+    font-family: 'proxima_nova_rgbold';
+    src: url('../fonts/proximanova-bold-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proxima_nova_rgbold_italic';
+    src: url('../fonts/proximanova-boldit-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-boldit-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proxima_novalight';
+    src: url('../fonts/proximanova-light-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proxima_novalight_italic';
+    src: url('../fonts/proximanova-lightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proxima_nova_rgregular';
+    src: url('../fonts/proximanova-regular-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proxima_novaregular_italic';
+    src: url('../fonts/proximanova-regularitalic-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-regularitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proxima_novasemibold';
+    src: url('../fonts/proximanova-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proxima_novasemibold_italic';
+    src: url('../fonts/proximanova-semibolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-semibolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #181918;
+}
+
+/*Links*/
+a {color:#525252;}
+a:focus, a:hover{color: #686768;}
+
+/*Buttons*/
+
+
+.btn {
+    border-radius: 0 !important;
+    border: none;
+   
+}
+.btn{
+    background: #FFD900;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #666466;
+    color: #191919;
+    text-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.btn:hover{
+    background: rgba(253, 215, 50, 0.64);
+}
+.btn-primary {
+    background-color: #666466;
+    background-image: none;
+    color:#fff;
+}
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #b1afb1;
+    background-image: none;
+    border-color: #b1afb1;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
+    color: #ffffff;
+    background-color: #acacac;
+}
+
+/*Nav */
+.nav-list > .active > a, .nav-list > .active > a:hover, .nav-list > .active > a:focus{    background-color: #686768;}
+input[type='radio'] {
+  -webkit-appearance:none;
+  width:14px;
+  height:14px;
+  
+  border-radius:50%;
+  outline:none;
+  box-shadow:0 0 1px 0px gray inset;
+}
+
+input[type='radio']:hover {
+  box-shadow:0 0 5px 0px orange inset;
+}
+
+input[type='radio']:before {
+  content:'';
+  display:block;
+  width:60%;
+  height:60%;
+  margin: 20% auto;    
+  border-radius:50%;    
+}
+input[type='radio']:checked:before {
+  background:#fdd732;
+    //filter: invert(100%) hue-rotate(18deg) brightness(1.9);
+}
+input[type="checkbox"] { /* change "blue" browser chrome to yellow */
+  filter: invert(100%) hue-rotate(18deg) brightness(1.9);
+}
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input{
+        border: 1px solid #686768;
+        border-radius:0;
+}
+textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus{
+    border-color: #686768;
+        -webkit-box-shadow: inset 0 1px 1px rgba(104, 103, 104, 0.2), 0 0 8px rrgba(104, 103, 104, 0.2);
+    -moz-box-shadow: inset 0 1px 1px rgba(104, 103, 104, 0.2), 0 0 8px rgba(104, 103, 104, 0.2);
+    box-shadow: inset 0 1px 1px rgba(104, 103, 104, 0.2), 0 0 8px rgba(104, 103, 104, 0.4);
+    
+}
+.add-on{
+    border-radius: 0 !important;
+}
+.btn.btn-success{
+    background: #5aa700 ;
+    border: #5aa700;
+    color: #fff;
+}
+.btn.btn-info{
+    background: #5aaafa ;
+    border: #5aaafa; 
+    color: #fff;
+}
+.btn.btn-warning{
+    background: #efc100 ;
+    border: #efc100;
+    color: #fff;
+}
+.btn.btn-danger{
+    background: #e71d32 ;
+    border: #e71d32;
+    color: #fff;
+}
+.btn.btn-inverse {
+    background: #acacac;
+    color: #fff;
+}
+ul li {list-style-type: none;}
+section#typography ul li::before {
+    content: '';
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    margin-left: -10px;
+    margin-right: 9px;
+    padding-right: -15px;
+    background-image: url(../img/chevron.png);
+    background-size: 10px;
+    text-indent: 25px;
+    background-repeat: no-repeat;
+}
+
+/*Progress Bar */
+.progress .bar {
+    background-color: #fdd732;
+    background-image: linear-gradient(to bottom, #fdd732, #F2C935);
+}
+
+
+.progress-striped .bar {
+  background-color: #fdd732;
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  -webkit-background-size: 40px 40px;
+     -moz-background-size: 40px 40px;
+       -o-background-size: 40px 40px;
+          background-size: 40px 40px;
+}
+
+.progress.active .bar {
+  -webkit-animation: progress-bar-stripes 2s linear infinite;
+     -moz-animation: progress-bar-stripes 2s linear infinite;
+      -ms-animation: progress-bar-stripes 2s linear infinite;
+       -o-animation: progress-bar-stripes 2s linear infinite;
+          animation: progress-bar-stripes 2s linear infinite;
+}
+
+.progress-danger .bar,
+.progress .bar-danger {
+  background-color: #dd514c;
+  background-image: -moz-linear-gradient(top, #ee5f5b, #c43c35);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#c43c35));
+  background-image: -webkit-linear-gradient(top, #ee5f5b, #c43c35);
+  background-image: -o-linear-gradient(top, #ee5f5b, #c43c35);
+  background-image: linear-gradient(to bottom, #ee5f5b, #c43c35);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffee5f5b', endColorstr='#ffc43c35', GradientType=0);
+}
+
+.progress-danger.progress-striped .bar,
+.progress-striped .bar-danger {
+  background-color: #ee5f5b;
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+
+.progress-success .bar,
+.progress .bar-success {
+  background-color: #5eb95e;
+  background-image: -moz-linear-gradient(top, #62c462, #57a957);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#57a957));
+  background-image: -webkit-linear-gradient(top, #62c462, #57a957);
+  background-image: -o-linear-gradient(top, #62c462, #57a957);
+  background-image: linear-gradient(to bottom, #62c462, #57a957);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff62c462', endColorstr='#ff57a957', GradientType=0);
+}
+
+.progress-success.progress-striped .bar,
+.progress-striped .bar-success {
+  background-color: #62c462;
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+
+.progress-info .bar,
+.progress .bar-info {
+  background-color: #4bb1cf;
+  background-image: -moz-linear-gradient(top, #5bc0de, #339bb9);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#339bb9));
+  background-image: -webkit-linear-gradient(top, #5bc0de, #339bb9);
+  background-image: -o-linear-gradient(top, #5bc0de, #339bb9);
+  background-image: linear-gradient(to bottom, #5bc0de, #339bb9);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff339bb9', GradientType=0);
+}
+
+.progress-info.progress-striped .bar,
+.progress-striped .bar-info {
+  background-color: #5bc0de;
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+
+.progress-warning .bar,
+.progress .bar-warning {
+  background-color: #faa732;
+  background-image: -moz-linear-gradient(top, #fbb450, #f89406);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#f89406));
+  background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
+  background-image: -o-linear-gradient(top, #fbb450, #f89406);
+  background-image: linear-gradient(to bottom, #fbb450, #f89406);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffbb450', endColorstr='#fff89406', GradientType=0);
+}
+
+.progress-warning.progress-striped .bar,
+.progress-striped .bar-warning {
+  background-color: #fbb450;
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+
+.nav-pills > .active > a, .nav-pills > .active > a:hover, .nav-pills > .active > a:focus {
+    color: #525252;
+    background-color: #fdd732;
+}
+
+.alert-info {
+      color: #c09853;
+      background-color: #fcf8e3;
+      background-color: #fcf8e3;
+      border-color: #fbeed5;
+}
+/* Style all font awesome icons */
+.footer-links .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+
+}
+
+/* Add a hover effect if you want */
+.footer-links .fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.footer-links .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.footer-links .fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+/* LinkedIn */
+.footer-links .fa-linkedin {
+  background: #0077B5;
+  color: white;
+}
+/* YouTube */
+.footer-links .fa-youtube {
+  background: #c4302b;
+  color: white;
+}
+/* RSS */
+.footer-links .fa-rss {
+  background: #f26522;
+  color: white;
+}
+body > .navbar .brand {
+    float: left;
+}
+.navbar .nav{
+    float: right;
+}
+.navbar-inverse .navbar-inner{
+    background-color: #122847;
+    background: #122847;
+    border-bottom: 3px solid #f6cb44;
+    }
+span.title {
+    color: #fbfbfb;
+    font-size: 3em;
+    position: relative;
+    float: left;
+    line-height: 2.3em;
+    margin-left: 1em;
+}
+.brand img{
+    height: 75px;
+    width:75px;
+}
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+    background-color: inherit;
+    box-shadow: none;
+}
+.jumbotron .marketing {
+    text-align: center;
+    color: #fbfbfb;
+}
+.navbar .nav {
+      top: 2em;  
+}
+.jumbotron .marketing .marketing-byline{
+color: #c8c8c8;
+    }
+.carousel-caption{
+    color: #fbfbfb;
+}
+.carousel-caption a{
+color: #1d95d3;
+}
+:target::before {
+  content: "";
+  display: block;
+  height: 98px; /* fixed header height*/
+  margin: -98px 0 0; /* negative fixed header height */
+}
+.carousel-inner img {
+    height: 343px; 
+    margin: 0 auto;
+}
+h2 {
+    font-size: 24.5px;
+}
+h3 {
+    font-size: 23.5px;
+}
+.navbar .nav > li > a {
+        padding: 10px;
+        color: #fbfbfb;
+}
+.navbar-inverse .nav .active > a:hover, .navbar-inverse .nav .active > a:focus {
+    background-color: #156f9c;
+    border: none;
+    box-shadow: none;
+}
+.navbar .nav > li > a:hover {
+        background-color: #156f9c;
+}
+#program-text, #goal-text{
+    display:none;
+}
+#special-interest-programs:hover #program-text, #goals:hover #goal-text{
+    display: inline;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    left: 0;
+    width: 100%;
+    top: 0;
+    padding: 10px;
+    position: absolute;
+}
+#Jobs, #special-interest-programs, #goals{
+    min-height:280px;
+    position: relative;
+}
+li i{
+    color: #f6cb44;
+    padding-right: 5px;
+}
+#program-text a{
+    color: #1d95d3;
+    font-weight: bold;
+}
+
+
+button.btn.btn-navbar, .navbar-inverse .btn-navbar:hover, .navbar-inverse .btn-navbar:focus, .navbar-inverse .btn-navbar:active, .navbar-inverse .btn-navbar.active, .navbar-inverse .btn-navbar.disabled, .navbar-inverse .btn-navbar[disabled] {
+    background: #156f9c !important;
+}
+.carousel-indicators{
+    display: none;
+}
+.container.masthead .btn {
+    background: #FFD900;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #666466;
+    color: #191919;
+    text-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+        padding: 4px 12px;
+        display: inline-block;
+        font-size: 14px;
+    line-height: 20px;
+        text-align: center;
+        vertical-align: middle;
+    cursor: pointer;
+}
+.marketing .marketing-byline {margin-bottom: 20px;}
+
+#Opportunities a, .modal-body a{
+    text-decoration: underline;
+}
+
+
+
+
+/* Responsive Helpers */
+@media screen and (max-width: 1603px) {
+  span.title { 
+        margin-left: 10px;
+      font-size: 2.5em;
+          line-height: 2.7em;
+          margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 1475px) {
+  span.title { 
+            font-size: 1.5em;
+          line-height: 4.7em;
+  }
+}
+@media screen and (max-width: 1275px) {
+  span.title { 
+          line-height: 2.7em;
+  }
+    .navbar .nav {
+    float: left;
+        margin-left:10px;
+            top: 0px;
+}
+}
+@media screen and (max-width: 1200px) {
+  .jumbotron .masthead h1{ 
+          font-size: 3em;
+  }
+}
+@media screen and (max-width: 980px){
+span.title {
+        line-height: 3.7em;
+    font-size: 2em;
+}
+    }
+@media (max-width: 979px){
+.navbar-inverse .nav-collapse .nav > li > a, .navbar-inverse .nav-collapse .dropdown-menu a {
+    color: #fff;
+}
+    .navbar-inverse .nav-collapse .nav > li > a:hover, .navbar-inverse .nav-collapse .nav > li > a:focus, .navbar-inverse .nav-collapse .dropdown-menu a:hover, .navbar-inverse .nav-collapse .dropdown-menu a:focus{
+        background: #156f9c !important;
+    }
+    }
+@media (max-width: 767px){
+.masthead h1 {
+    font-size: 38px;
+}
+}
+@media (max-width: 570px){
+body > .navbar .brand {
+    display: none;
+}
+}
+@media (max-width: 550px){
+span.title {
+        line-height: 1.7em;
+}
+}
